@@ -13,7 +13,6 @@ void insertion_sort_list(listint_t **list)
 	{
 		return;
 	}
-
 	follow = (*list);
 	lead = (*list)->next;
 	while (lead)
@@ -29,12 +28,10 @@ void insertion_sort_list(listint_t **list)
 			{
 				*list = lead;
 			}
-
 			if (lead->next)
 			{
 				lead->next->prev = follow;
 			}
-
 			temp = lead->next;
 			lead->next = follow;
 			lead->prev = follow->prev;

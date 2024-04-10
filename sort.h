@@ -24,4 +24,5 @@ void insertion_sort_list(listint_t **list);
 void quick_sort(int *array, size_t size);
 int partition(int *array, int low, int high, size_t size);
 void quicksort(int *array, int low, int high, size_t size);
+void swap_ints(int *a, int *b);
 #endif
